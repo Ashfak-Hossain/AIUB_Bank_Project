@@ -10,9 +10,48 @@
 }
 
 .Login-area input::placeholder {
-  color: #919090;
+  color: grey;
 }
 
-.Login-area form {
+.login-form {
   margin: 0 50px;
+}
+
+#transaction-area {
+  margin: 2rem 3rem;
+  padding: 3rem;
+  display: none;
+}
+
+.deposit {
+  background-color: slateblue;
+}
+
+.withdraw {
+  background-color: lightsalmon;
+}
+
+.balance {
+  background-color: orange;
+}
+
+.status {
+  margin: 0 20px;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+}
+
+.submit-area {
+  border-radius: 7px;
+  margin-top: 100px;
+  padding: 2rem;
+  box-shadow: 10px 10px 25px -2px rgba(0, 0, 0, 0.65);
+  -webkit-box-shadow: 10px 10px 25px -2px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: 10px 10px 25px -2px rgba(0, 0, 0, 0.65);
+}
+
+.submit-area input::placeholder {
+  color: grey;
 }

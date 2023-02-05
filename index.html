@@ -14,31 +14,72 @@
     />
   </head>
   <body>
-    <h1 class="welcome-title text-center">Welcome to AIUB Bank</h1>
+    <div id="login-area">
+      <h1 class="welcome-title text-center">Welcome to AIUB Bank</h1>
 
-    <div id="login-area" class="Login-area container">
-      <form>
-        <h2>Login</h2>
-        <div class="mb-3">
-          <input
-            placeholder="Email"
-            type="email"
-            class="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-          />
-        </div>
-        <div class="mb-3">
-          <input
-            placeholder="password"
-            type="password"
-            class="form-control"
-            id="exampleInputPassword1"
-          />
-        </div>
+      <div class="Login-area container">
+        <div class="login-form">
+          <h4>Login</h4>
 
-        <button type="submit" class="btn btn-success">Enter</button>
-      </form>
+          <input type="text" class="form-control" placeholder="Email" />
+          <br />
+          <input type="password" class="form-control" placeholder="password" />
+          <br />
+          <button id="login" class="btn btn-success">Enter</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="transaction-area">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="deposit status">
+            <h5>Deposit</h5>
+            <h2>$ <span id="currentDeposit">00</span></h2>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="withdraw status">
+            <h5>Withdraw</h5>
+            <h2>$00</h2>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="balance status">
+            <h5>Balance</h5>
+            <h2>$ <span id="currentBalance">1240</span></h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="submit-area">
+            <h4>Deposit</h4>
+            <input
+              id="depositAmount"
+              type="text"
+              class="form-control"
+              placeholder="$ amount you want to deposit"
+            />
+            <br />
+            <button id="deposit" class="btn btn-success">Deposit</button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="submit-area">
+            <h4>Withdraw</h4>
+            <input
+            id="withdrawAmount"
+              type="text"
+              class="form-control"
+              placeholder="$ amount you want to withdraw"
+            />
+            <br />
+            <button id="withdraw" class="btn btn-success">Withdraw</button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="/App.js"></script>
